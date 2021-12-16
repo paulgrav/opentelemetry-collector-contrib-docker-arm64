@@ -1,6 +1,6 @@
 FROM alpine:latest as certs
 RUN apk --update add ca-certificates 
-ADD https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/download/v0.29.0/otelcontribcol_linux_arm64 /
+ADD https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/download/v0.41.0/otelcontribcol_linux_arm64 /
 RUN chmod 755 /otelcontribcol_linux_arm64
 
 FROM scratch
